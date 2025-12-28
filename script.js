@@ -26,5 +26,36 @@ const posts = [
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
     }
-]
+].forEach((post) => {
+    console.log(post.avatar)
+document.getElementById("post-section").innerHTML += `
+    <div class="post-card">
+            <section class="author-section">
+                <img class="author-img" src=${post.avatar}>
+                <div class="author-text-container">
+                    <h1>${post.name}</h1>
+                    <h2>${post.location}</h2>
+                </div>
+            </section>
+            <section class="img-section">
+                <img class="img-post" src=${post.post}>
+            </section>
+            <section class="action-section">
+                <section class="action-btn">
+                    <img src="images/icon-heart.png">
+                    <img src="images/icon-comment.png">
+                    <img src="images/icon-dm.png">
+                </section>
+                <h3>${post.likes} likes</h3>
+            </section>
+            <section class="comment-section">
+                <p><b>${post.username}</b> ${post.comment}</p>
+            </section>
 
+
+        </div>
+
+`
+
+
+})

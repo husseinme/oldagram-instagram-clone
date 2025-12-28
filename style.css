@@ -8,15 +8,77 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 16px 8px;
-    height: 100px;
+    align-items: center;
+    padding: 8px 16px;
+    padding-top: 40px;
+    height: 67px;
     border-bottom: 1px solid #C6C6C6;
+    margin-bottom: 5px;
 }
 
-img{
-    height: 100%;
+.img-logo{
+    height: 65%;
 }
+
 .img-user{
-
+    height: 65%;
     border-radius: 100%;
 }
+
+/*content section*/
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+.author-section{
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+.author-img{
+    margin: 10px;
+    height: 50%;
+    border-radius: 100%;
+}
+
+.author-text-container h1 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+.author-text-container h2 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.img-post{
+    width: 100%;
+}
+
+.action-section{
+    margin: 10px 5px;
+}
+
+.action-section img{
+    width: 32px;
+    margin: 5px;
+}
+
+.action-section h3{
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.comment-section{
+    margin-left: 15px;
+}
+
+
+
+
+
